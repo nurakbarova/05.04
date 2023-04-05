@@ -1,0 +1,27 @@
+.circle {
+    border-radius: 50%;
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: green;
+    position: relative;
+    
+}
+.wrapper .circle {
+    border: 5px solid green;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 70px;
+    animation-name: box;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+@keyframes box {
+  from {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
